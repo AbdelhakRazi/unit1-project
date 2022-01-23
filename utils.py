@@ -8,12 +8,10 @@ def convert_to_floats(rows):
     result = []
     # To-Do Loop through the list and convert row by row
     # a loop should be written 
-
-       value = np.asarray(row)
-       value = value.astype(np.float)
-
-       result.append(value)  # Vstack means we are adding a row
-
+    for tup in rows:
+        value = np.asarray(tup)
+        value = value.astype(np.float)
+        result.append(value)  # Vstack means we are adding a row
     return np.array(result)
 
 
